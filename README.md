@@ -63,10 +63,12 @@ In the end, your new cross compiler will be on your "/home/directory/xtools"...
 
 
 **STEP 2**  
-NodeJS WRTC Module uses WebRTC Library, which is part of Chromium Browser Project, and so we need to install some software needed to compile WebRTC/Chromium. There is a script that install all the software (dependencies) for us. We need to run this script.
+NodeJS WRTC Module uses WebRTC Library, which is part of Chromium Browser Project, and so we need to install some software needed to compile WebRTC/Chromium. There is a script that install all the software (dependencies) for us. We need to run this following script.  
 
-. NodeJS WebRTC Module Build from Source
-2.1 instructions already exists for armv7, armv8... this tutorial will cover how to do it for armv6...
+Script [install-build-deps.hs](https://cs.chromium.org/chromium/src/build/install-build-deps.sh)  
+
+If you want/need a full reference about the script, [here is the page.](https://webrtc.org/native-code/development/prerequisite-sw/)  
+
 
 **STEP 3**  
 The NodeJS-WRTC Page to build from source is here:  
