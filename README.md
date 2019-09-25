@@ -28,7 +28,7 @@ The software Crosstool-NG can build a cross compiler for you, there is only a ne
 Go to the software website, download and install it.
 Then, copy the file "config-armv6zkRPIzero-V2" to the Crosstool-NG folder and rename it as ".config" (dot config).
 
-Run "./ct-ng build"
+```Run "./ct-ng build"```
 
 
 2. NodeJS WebRTC Module Build from Source
@@ -38,7 +38,7 @@ To compile NodeJS-WRTC Module, you will follow the sames little steps described 
 First, inside the directory node-webrtc you will find a file called "CMakeLists.txt", replace it with the one that is provided here. Just copy over it.
 Second, inside the directory node-webrtc/scripts you will find a file called "configure-webrtc.sh", replace it with the one that is provided here. Just copy over it.
 Third, use the following command line to invoke the compilation process, pointing the process to use the cross compiler that you are providing:
-SKIP_DONWLOAD=true  TARGET_ARCH=armv6  ARM_TOOLS_PATH=/path/to/your/cross/compiler/folder  npm  install
+```SKIP_DONWLOAD=true  TARGET_ARCH=armv6  ARM_TOOLS_PATH=/path/to/your/cross/compiler/folder  npm  install```
 
 
 
