@@ -25,7 +25,12 @@ I was very happy to see that WebTorrent is also working on the RPI Zero, using t
 **Here are the steps in more details:**  
 
 **STEP 1**  
-The software Crosstool-NG can build a cross compiler for you, there is only a need to configure it with options that you want, or, just use a pre configured configuration file, like the one which is provided here (config-armv6zkRPIzero-V2).
+The software Crosstool-NG can build a cross compiler for you.  
+![Cross Compiler](img/cross-compiler-001.png)
+
+![Cross Compiler](img/cross-compiler-002.png)
+
+, there is only a need to configure it with options that you want, or, just use a pre configured configuration file, like the one which is provided here (config-armv6zkRPIzero-V2).
 Go to the software website, download and install it.
 Then, copy the file "config-armv6zkRPIzero-V2" to the Crosstool-NG folder and rename it as ".config" (dot config).
 
@@ -43,7 +48,7 @@ To compile NodeJS-WRTC Module, you will follow the sames little steps described 
 First, inside the directory node-webrtc you will find a file called "CMakeLists.txt", replace it with the one that is provided here. Just copy over it.
 Second, inside the directory node-webrtc/scripts you will find a file called "configure-webrtc.sh", replace it with the one that is provided here. Just copy over it.
 
-![heba](https://raw.githubusercontent.com/t2age/webrtcarmv6/master/img/file-folders.jpg)
+![Folders](https://raw.githubusercontent.com/t2age/webrtcarmv6/master/img/file-folders.jpg)
 
 Third, use the following command line to invoke the compilation process, pointing the process to use the cross compiler that you are providing:
 
