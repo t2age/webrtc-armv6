@@ -83,6 +83,8 @@ You may need to set correct execute permission of the file "configure-webrtc.sh"
 chmod +x configure-webrtc.sh
 ```
 
+Be sure to be on the same directory that the file itself is located!  
+
 
 ![Folders](https://raw.githubusercontent.com/t2age/webrtcarmv6/master/img/file-folders.jpg)
 
