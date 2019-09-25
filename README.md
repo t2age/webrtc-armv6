@@ -25,10 +25,11 @@ I was very happy to see that WebTorrent is also working on the RPI Zero, using t
 **Here are the steps in more details:**  
 
 **STEP 1**  
-The software Crosstool-NG can build a cross compiler for you.  
-![Cross Compiler](img/cross-compiler-001.png)
+We need a cross compiler, so we can use a fast desktop AMD/Intel computer and compile software for the RaspberryPI.  
+![](img/cross-compiler-001.png)
 
-![Cross Compiler](img/cross-compiler-002.png)
+The software Crosstool-NG can build a cross compiler for you.  
+![](img/cross-compiler-002.png)
 
 , there is only a need to configure it with options that you want, or, just use a pre configured configuration file, like the one which is provided here (config-armv6zkRPIzero-V2).
 Go to the software website, download and install it.
