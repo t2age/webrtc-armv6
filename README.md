@@ -24,23 +24,23 @@ I was very happy to see that WebTorrent is also working on the RPI Zero, using t
 
 **Here are the steps in more details:**
 
-1. Crosstool-NG - Create Your Own CrossCompiler x86-to-ARM
-1.1 armv6-rpizero-configuration-file
-1.2 download and install Crosstool-NG
-1.3 run ./ct-ng menuconfig
-1.4 load the armv6-rpizero-configuration-file
-1.5 save the configuration as ".config" (the name of the file to save is: "dot"config)
+The software Crosstool-NG can build a cross compiler for you, there is only a need to configure it with options that you want, or, just use a pre configured configuration file, like the one which is provided here (config-armv6zkRPIzero-V2).
+Go to the software website, download and install it.
+Then, copy the file "config-armv6zkRPIzero-V2" to the Crosstool-NG folder and rename it as ".config" (dot config).
+
+Run "./ct-ng build"
 
 
 2. NodeJS WebRTC Module Build from Source
 2.1 instructions already exists for armv7, armv8... this tutorial will cover how to do it for armv6...
 
+To compile NodeJS-WRTC Module, you will follow the sames little steps described on the page, with 3 small changes:
+First, inside the directory node-webrtc you will find a file called "CMakeLists.txt", replace it with the one that is provided here. Just copy over it.
+Second, inside the directory node-webrtc/scripts you will find a file called "configure-webrtc.sh", replace it with the one that is provided here. Just copy over it.
+Third, use the following command line to invoke the compilation process, pointing the process to use the cross compiler that you are providing:
+SKIP_DONWLOAD=true  TARGET_ARCH=armv6  ARM_TOOLS_PATH=/path/to/your/cross/compiler/folder  npm  install
 
-3. CMakelists.txt - add support to armv6 compilation
-3.1 Configura-webrtc.sh script
-3.2 Download all the compilation files
-3.3 Copy the modifications to the appropriated locations
-3.4 Point the compilation to the cross compiler that you have created in step 1, and invoke the compilation process and wait it to complete...
+
 
 [Diagrams]
 a) a cross compilation diagram: x86 to arm
