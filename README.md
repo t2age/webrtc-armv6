@@ -43,7 +43,7 @@ To compile NodeJS-WRTC Module, you will follow the sames little steps described 
 First, inside the directory node-webrtc you will find a file called "CMakeLists.txt", replace it with the one that is provided here. Just copy over it.
 Second, inside the directory node-webrtc/scripts you will find a file called "configure-webrtc.sh", replace it with the one that is provided here. Just copy over it.
 
-![img/file-folders.jpg]
+![https://raw.githubusercontent.com/t2age/webrtcarmv6/master/img/file-folders.jpg]
 
 Third, use the following command line to invoke the compilation process, pointing the process to use the cross compiler that you are providing:
 
