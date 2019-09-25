@@ -1,6 +1,4 @@
-# webrtcarmv6
-Node WebRTC f/ source for armv6 RaspberryPI Zero
-
+# Node WebRTC f/ source for armv6 RaspberryPI Zero
 Build Node-WebRTC From Source for armv6 Raspberry PI Zero
 2019/August
 
