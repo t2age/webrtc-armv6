@@ -31,14 +31,33 @@ We need a cross compiler, so we can use a fast desktop AMD/Intel computer and co
 The software Crosstool-NG can build a cross compiler for you.  
 ![](img/cross-compiler-002.png)
 
+**Lets install Crosstool-NG:**  
+First, we need to install some software that are required (dependencies) by Crosstool-NG:  
+```sudo apt install gcc g++ gperf bison flex texinfo  
+sudo apt install help2man make libncurses5-dev  
+sudo apt install python3-dev autoconf automake  
+sudo apt install libtool libtool-bin gawk wget bzip2  
+sudo apt install xz-utils unzip patch libstdc++6```  
+
+Then, download the crosstool-ng, open a terminal shell and upack it:
+```tar -xjf ./crosstool-ng-1.24.0.tar.bz2```
+
+Enter the folder:  
+```cd crosstool-ng-1.24.0/```  
+
+```./configure  --enable-local
+make```
+
+
+Now you are ready to go.  
 We need to configure Croostool-NG with options that we wanted, or, just use a pre configured configuration file, like the one which is provided here ("config-armv6zkRPIzero-V2").  
 
-Go to the software website, download and install it.  
-Then, copy the file "config-armv6zkRPIzero-V2" to the Crosstool-NG folder and rename it as ".config" (dot config).  
+Copy the file "config-armv6zkRPIzero-V2" to the Crosstool-NG folder and rename it as ".config" (dot config).  
 
 ```Run "./ct-ng build"```
 
 In the end, your new cross compiler will be on your "/home/directory/xtools"...
+
 
 **STEP 2**  
 NodeJS WRTC Module uses WebRTC Library, which is part of Chromium Browser Project, and so we need to install some software needed to compile WebRTC/Chromium. There is a script that install all the software (dependencies) for us. We need to run this script.
