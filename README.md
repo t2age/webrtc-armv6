@@ -38,6 +38,8 @@ Then, copy the file "config-armv6zkRPIzero-V2" to the Crosstool-NG folder and re
 
 ```Run "./ct-ng build"```
 
+In the end, your new cross compiler will be on your "/home/directory/xtools"...
+
 **STEP 2**  
 NodeJS WRTC Module uses WebRTC Library, which is part of Chromium Browser Project, and so we need to install some software needed to compile WebRTC/Chromium. There is a script that install all the software (dependencies) for us. We need to run this script.
 
@@ -55,13 +57,9 @@ Third, use the following command line to invoke the compilation process, pointin
 
 ```SKIP_DONWLOAD=true  TARGET_ARCH=armv6  ARM_TOOLS_PATH=/path/to/your/cross/compiler/folder  npm  install```
 
-
-
-**[Diagrams]**  
-a) a cross compilation diagram: x86 to arm  
-b) Crosstool-NG - build your own crosscompiler  
-c) CMakeLists.txt and configure-webrtc.sh  
-d) 2 main blocks of code will be compiled  
+This is it.  
+At the end, the folder "node-webrtc/build/Release" will have the resulting binary file (node.wrtc), good for use on the Raspberry PI Zero.  
+You will need to place this file on "node_modules/wrtc/build/Release" folder of your NodeJS project/sample code, replacing the original that should be there, BUT AT THE PRESENT TIME, IT IS NOT WORKING PROPERLY!
 
 
 **Software Versions used:**
