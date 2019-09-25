@@ -9,8 +9,7 @@ A cross compiler (x86 to armv6) is needed, so in August/2019 I searched for a re
 
 I succeed, and the result is that WebRTC DataChannel is working on the RPI Zero.
 
-**WebTorrent.**
-
+**WebTorrent.**  
 I was very happy to see that WebTorrent is also working on the RPI Zero, using the same binary result achieved by the compilation process.
 
 
@@ -45,10 +44,10 @@ Third, use the following command line to invoke the compilation process, pointin
 
 
 [Diagrams]
-a) a cross compilation diagram: x86 to arm
-b) Crosstool-NG - build your own crosscompiler
-c) CMakeLists.txt and configure-webrtc.sh
-d) 2 main blocks of code will be compiled
+a) a cross compilation diagram: x86 to arm  
+b) Crosstool-NG - build your own crosscompiler  
+c) CMakeLists.txt and configure-webrtc.sh  
+d) 2 main blocks of code will be compiled  
 
 
 **Software Versions used:**
