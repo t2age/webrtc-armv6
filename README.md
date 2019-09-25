@@ -103,12 +103,15 @@ SKIP_DOWNLOAD=true  TARGET_ARCH=armv6  ARM_TOOLS_PATH=/path/to/your/cross/compil
 
 This is it. Wait until finish...  
 
+Two main blocks will be build...  
+![](img/wrtc-compile-002.png)
 
-![](img/wrtc-compile-002.png
-
+The WebRTC Library and NodeJS WRTC Module...  
 ![](img/wrtc-compile-003.png)
 
+The CMakeLists.txt file hold the instructions...  
 ![](img/wrtc-compile-004.png)
+
 
 At the end, the folder "node-webrtc/build/Release" will have the resulting binary file (wrtc.node), good for use on the Raspberry PI Zero.  
 
