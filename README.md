@@ -52,7 +52,7 @@ d) 2 main blocks of code will be compiled
 
 
 **Software Versions used:**
-2019 AUGUST
+AUGUST/2019
 Developed on GNU/Linux Ubuntu 18.04 x86 64Bits
 Crosstool-NG version: 1.24.0
 Node-wrtc version: 0.4.1
