@@ -37,7 +37,8 @@ First, we need to install some software that are required (dependencies) by Cros
 sudo apt install help2man make libncurses5-dev  
 sudo apt install python3-dev autoconf automake  
 sudo apt install libtool libtool-bin gawk wget bzip2  
-sudo apt install xz-utils unzip patch libstdc++6```  
+sudo apt install xz-utils unzip patch libstdc++6  
+```
 
 Then, download the crosstool-ng, open a terminal shell and upack it:
 ```tar -xjf ./crosstool-ng-1.24.0.tar.bz2```
@@ -46,8 +47,8 @@ Enter the folder:
 ```cd crosstool-ng-1.24.0/```  
 
 ```./configure  --enable-local
-make```
-
+make
+```
 
 Now you are ready to go.  
 We need to configure Croostool-NG with options that we wanted, or, just use a pre configured configuration file, like the one which is provided here ("config-armv6zkRPIzero-V2").  
