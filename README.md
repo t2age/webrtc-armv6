@@ -10,6 +10,7 @@ A cross compiler (x86 to armv6) is needed, so in August/2019 I searched for a re
 I succeed, and the result is that WebRTC DataChannel is working on the RPI Zero.
 
 **WebTorrent.**
+
 I was very happy to see that WebTorrent is also working on the RPI Zero, using the same binary result achieved by the compilation process.
 
 
@@ -38,6 +39,7 @@ To compile NodeJS-WRTC Module, you will follow the sames little steps described 
 First, inside the directory node-webrtc you will find a file called "CMakeLists.txt", replace it with the one that is provided here. Just copy over it.
 Second, inside the directory node-webrtc/scripts you will find a file called "configure-webrtc.sh", replace it with the one that is provided here. Just copy over it.
 Third, use the following command line to invoke the compilation process, pointing the process to use the cross compiler that you are providing:
+
 ```SKIP_DONWLOAD=true  TARGET_ARCH=armv6  ARM_TOOLS_PATH=/path/to/your/cross/compiler/folder  npm  install```
 
 
