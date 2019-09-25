@@ -59,7 +59,8 @@ Third, use the following command line to invoke the compilation process, pointin
 
 This is it.  
 At the end, the folder "node-webrtc/build/Release" will have the resulting binary file (node.wrtc), good for use on the Raspberry PI Zero.  
-You will need to place this file on "node_modules/wrtc/build/Release" folder of your NodeJS project/sample code, replacing the original that should be there, BUT AT THE PRESENT TIME, IT IS NOT WORKING PROPERLY!
+You will need to place this file on "node_modules/wrtc/build/Release" folder of your NodeJS project/sample code, replacing the original that should be there, BUT AT THE PRESENT TIME, IT IS NOT WORKING PROPERLY!  
+On the RaspberryPI Zero, when you run the command "npm install wrtc", the process will install a couple of files but the binary component node.wrtc will not work, you then need to replace it with the one that you have compiled...  
 
 
 **Software Versions used:**
@@ -67,24 +68,24 @@ AUGUST/2019
 - Developed on GNU/Linux Ubuntu 18.04 x86 64Bits
 - Crosstool-NG version: 1.24.0
 - Node-wrtc version: 0.4.1
-- WebRTC version: M76
+- WebRTC version: M76  
 
 **Tested on:**
 - Raspberry PI 3 Raspbian 10 Buster
 - NodeJS 10.16.0 armv7l
 - Raspberry PI Zero WH Raspbian 10 Buster
-- NodeJS 10.16.0 armv6l
+- NodeJS 10.16.0 armv6l  
 
 
 My goal for doing this compilation (WRTC4ARMV6) was to achive WebRTC Datachannel on a Raspberry PI Zero, and I achieve success after reading and trying...
 The emphasis here is "DataChannel" and "RPI Zero".
-For the RPI2 and better, audio and video are items that I doo consider, but for the RPI Zero, I want to keep things at DataChannel ONLY...
+For the RPI2 and better, audio and video are items that I doo consider, but for the RPI Zero, I want to keep things at DataChannel ONLY...  
 
 Everything looks very simple now, because I know the details, but, in the beginning I had to use try/error/learn to gain knowledge on the whole process. I was only able to find small amount of information online on the subject of WebRTC on RPIZero, and some portions related to old versions of the software and no longer are the correct thing to do and to know... 
 
-Then, considering that it is a relatively easy task, and unleash a interesting practical result, I decide to create this tuto in the way it is presented here...
+Then, considering that it is a relatively easy task, and unleash a interesting practical result, I decide to create this tuto in the way it is presented here...  
 
-**About Updates/Upgrades**
+**About Updates/Upgrades**  
 RasPI OS, NodeJS, WebRTC and WebTorrent software(s) keep evolving every single day, changing, making small adjustments... at some point, the procedures reported here will need some minor corrections/updates, or will completely cease to perform its functions, at such point, I hope somebody can fork/copy the instruction/scripts here and make available the infos to support future evolution of all the implicated pieces of code.
 
 Hopefully, the text, scripts and diagrams I am providing here helps the reader to get a good basic understanding of the subject (RPIZ / WebRTC), enough to identify any future potential issues that may appear and resolves them.
