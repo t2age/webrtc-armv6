@@ -59,10 +59,10 @@ AUGUST/2019
 - WebRTC version: M76
 
 **Tested on:**
-Raspberry PI 3 Raspbian 10 Buster
-NodeJS 10.16.0 armv7l
-Raspberry PI Zero WH Raspbian 10 Buster
-NodeJS 10.16.0 armv6l
+- Raspberry PI 3 Raspbian 10 Buster
+- NodeJS 10.16.0 armv7l
+- Raspberry PI Zero WH Raspbian 10 Buster
+- NodeJS 10.16.0 armv6l
 
 
 My goal for doing this compilation (WRTC4ARMV6) was to achive WebRTC Datachannel on a Raspberry PI Zero, and I achieve success after reading and trying...
