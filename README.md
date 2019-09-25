@@ -93,9 +93,11 @@ Third, use the following command line to invoke the compilation process, pointin
 ```SKIP_DONWLOAD=true  TARGET_ARCH=armv6  ARM_TOOLS_PATH=/path/to/your/cross/compiler/folder  npm  install```
 
 This is it.  
-At the end, the folder "node-webrtc/build/Release" will have the resulting binary file (node.wrtc), good for use on the Raspberry PI Zero.  
-You will need to place this file on "node_modules/wrtc/build/Release" folder of your NodeJS project/sample code, replacing the original that should be there, BUT AT THE PRESENT TIME, IT IS NOT WORKING PROPERLY!  
-On the RaspberryPI Zero, when you run the command "npm install wrtc", the process will install a couple of files but the binary component node.wrtc will not work, you then need to replace it with the one that you have compiled...  
+At the end, the folder "node-webrtc/build/Release" will have the resulting binary file (wrtc.node), good for use on the Raspberry PI Zero.  
+
+You will need to place this file inside "node_modules/wrtc/build/Release" folder of your NodeJS project/sample code, replacing the original that should be there, BUT AT THE PRESENT TIME, IT IS NOT WORKING PROPERLY!  
+
+On the RaspberryPI Zero, when you run the command "npm install wrtc", the process will install the node-wrtc module but the binary component wrtc.node will not work (as of 2019/AUGUST), you then need to replace it with the one that you have compiled...  
 
 
 **Software Versions used:**
