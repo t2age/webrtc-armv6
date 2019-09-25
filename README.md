@@ -45,8 +45,6 @@ Second, inside the directory node-webrtc/scripts you will find a file called "co
 
 ![heba](https://raw.githubusercontent.com/t2age/webrtcarmv6/master/img/file-folders.jpg)
 
-![](img/file-folders.jpg?raw=true "Title")
-
 Third, use the following command line to invoke the compilation process, pointing the process to use the cross compiler that you are providing:
 
 ```SKIP_DONWLOAD=true  TARGET_ARCH=armv6  ARM_TOOLS_PATH=/path/to/your/cross/compiler/folder  npm  install```
