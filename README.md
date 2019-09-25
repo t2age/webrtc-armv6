@@ -69,6 +69,8 @@ NodeJS WRTC Module uses WebRTC Library, which is part of Chromium Browser Projec
 2.1 instructions already exists for armv7, armv8... this tutorial will cover how to do it for armv6...
 
 **STEP 3**  
+The NodeJS-WRTC Page to build from source is here:  
+[GitHub Node-WRTC Build from Source](https://github.com/node-webrtc/node-webrtc/blob/develop/docs/build-from-source.md)  
 To compile NodeJS-WRTC Module, you will follow the sames little steps described on the page, with 3 small changes:
 First, inside the directory node-webrtc you will find a file called "CMakeLists.txt", replace it with the one that is provided here. Just copy over it.
 Second, inside the directory node-webrtc/scripts you will find a file called "configure-webrtc.sh", replace it with the one that is provided here. Just copy over it.
