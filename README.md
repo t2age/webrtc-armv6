@@ -40,13 +40,15 @@ sudo apt install libtool libtool-bin gawk wget bzip2
 sudo apt install xz-utils unzip patch libstdc++6  
 ```
 
-Then, download the crosstool-ng, open a terminal shell and upack it:
+Then, download the crosstool-ng, open a terminal shell and upack it:  
 ```tar -xjf ./crosstool-ng-1.24.0.tar.bz2```
 
 Enter the folder:  
-```cd crosstool-ng-1.24.0/```  
+```
+cd crosstool-ng-1.24.0/  
 
-```./configure  --enable-local
+./configure  --enable-local
+
 make
 ```
 
