@@ -22,8 +22,9 @@ I was very happy to see that WebTorrent is also working on the RPI Zero, using t
 3) Use the 2 modified scripts provided here, replace the existing originals with these (modified) ones, and run the cross compilation process.
 
 
-**Here are the steps in more details:**
+**Here are the steps in more details:**  
 
+**STEP 1**  
 The software Crosstool-NG can build a cross compiler for you, there is only a need to configure it with options that you want, or, just use a pre configured configuration file, like the one which is provided here (config-armv6zkRPIzero-V2).
 Go to the software website, download and install it.
 Then, copy the file "config-armv6zkRPIzero-V2" to the Crosstool-NG folder and rename it as ".config" (dot config).
@@ -31,9 +32,13 @@ Then, copy the file "config-armv6zkRPIzero-V2" to the Crosstool-NG folder and re
 ```Run "./ct-ng build"```
 
 
-2. NodeJS WebRTC Module Build from Source
+**STEP 2**  
+NodeJS WRTC Module uses WebRTC Library, which is part of Chromium Browser Project, and so we need to install some software needed to compile WebRTC/Chromium. There is a script that install all the software (dependencies) for us. We need to run this script.
+
+. NodeJS WebRTC Module Build from Source
 2.1 instructions already exists for armv7, armv8... this tutorial will cover how to do it for armv6...
 
+**STEP 3**  
 To compile NodeJS-WRTC Module, you will follow the sames little steps described on the page, with 3 small changes:
 First, inside the directory node-webrtc you will find a file called "CMakeLists.txt", replace it with the one that is provided here. Just copy over it.
 Second, inside the directory node-webrtc/scripts you will find a file called "configure-webrtc.sh", replace it with the one that is provided here. Just copy over it.
