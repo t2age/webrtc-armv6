@@ -77,6 +77,11 @@ The NodeJS-WRTC Page to build from source is here:
 [GitHub Node-WRTC Build from Source](https://github.com/node-webrtc/node-webrtc/blob/develop/docs/build-from-source.md)  
 To compile NodeJS-WRTC Module, you will follow the sames little steps described on the page, with 3 small changes:  
 
+Get the source files:  
+```
+git clone https://github.com/node-webrtc/node-webrtc.git
+```
+
 First, inside the directory node-webrtc you will find a file called "CMakeLists.txt", replace it with the one that is provided here. Just copy over it.  
 
 Second, inside the directory node-webrtc/scripts you will find a file called "configure-webrtc.sh", replace it with the one that is provided here. Just copy over it.  
