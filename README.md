@@ -153,4 +153,13 @@ Then, considering that it is a relatively easy task, and unleash a interesting p
 **About Updates/Upgrades**  
 RasPI OS, NodeJS, WebRTC and WebTorrent software(s) keep evolving every single day, changing, making small adjustments... at some point, the procedures reported here will need some minor corrections/updates, or will completely cease to perform its functions, at such point, I hope somebody can fork/copy the instruction/scripts here and make available the infos to support future evolution of all the implicated pieces of code.
 
-Hopefully, the text, scripts and diagrams I am providing here helps the reader to get a good basic understanding of the subject (RPIZ / WebRTC), enough to identify any future potential issues that may appear and resolves them.
+Hopefully, the text, scripts and diagrams I am providing here helps the reader to get a good basic understanding of the subject (RPIZ / WebRTC), enough to identify any future potential issues that may appear and resolves them.  
+  
+  
+**Sample Code**  
+There is a little easy simple sample code available...  
+![](https://raw.githubusercontent.com/t2age/webrtc-easy-power/master/img/webrtc-easy-power-001.png)  
+  
+[Sample here...](https://github.com/t2age/webrtc-easy-power)
+  
+  
