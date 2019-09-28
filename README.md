@@ -158,7 +158,7 @@ Hopefully, the text, scripts and diagrams I am providing here helps the reader t
   
 **Sample Code**  
 There is a little easy simple sample code available...  
-![](https://raw.githubusercontent.com/t2age/webrtc-easy-power/master/img/webrtc-easy-power-001.png)  
+![](https://raw.githubusercontent.com/t2age/webrtc-easy-power/master/img/webrtc-easy-power-001.jpg)  
   
 [Sample here...](https://github.com/t2age/webrtc-easy-power)
   
