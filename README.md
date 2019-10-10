@@ -156,10 +156,21 @@ RasPI OS, NodeJS, WebRTC and WebTorrent software(s) keep evolving every single d
 Hopefully, the text, scripts and diagrams I am providing here helps the reader to get a good basic understanding of the subject (RPIZ / WebRTC), enough to identify any future potential issues that may appear and resolves them.  
   
   
+-----
+
 **Sample Code**  
-There is a little easy simple sample code available...  
+A little easy simple sample code available...  
 ![](https://raw.githubusercontent.com/t2age/webrtc-easy-power/master/img/webrtc-easy-power-001.jpg)  
   
-[Sample here...](https://github.com/t2age/webrtc-easy-power)
+[Sample here...](https://github.com/t2age/webrtc-easy-power)  
+  
+  
+-----
+  
+**Another Sample using sync folder**  
+The first sample above uses a script-server to initiate the connection, this one here uses a sync folder to initiate the connection...  
+![](https://raw.githubusercontent.com/t2age/webrtc-easy-power-sync/master/img/webrtc-easy-power-sync-001.jpg)  
+  
+[Sync Sample here...](https://github.com/t2age/webrtc-easy-power-sync)  
   
   
